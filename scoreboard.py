@@ -13,7 +13,7 @@ class Scoreboard (Turtle):
     
     self.score = 0
 
-  def score_board(self):
+  def score_board(self):    
     self.clear()
     self.goto(x=-250, y= 260)
     self.write(f"Level: {self.score}", align='center', font=FONT)
@@ -21,7 +21,8 @@ class Scoreboard (Turtle):
   def score_increse(self):
     self.score += 1
 
-  def game_over(self):
-      self.clear()
-      self.write("GAME OVER", align='center', font=FONT)
+  def game_over(self):    
+    self.clear()
+    self.goto(x=0,y=0)  
+    self.write("GAME OVER", align='center', font=FONT)
     
